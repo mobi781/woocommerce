@@ -297,7 +297,7 @@ class WC_Install {
 		self::maybe_enable_setup_wizard();
 		self::update_wc_version();
 		self::maybe_update_db_version();
-		self::maybe_enable_homepage();
+		self::maybe_enable_homescreen();
 
 		delete_transient( 'wc_installing' );
 
@@ -342,7 +342,8 @@ class WC_Install {
 		return $missing_tables;
 	}
 
-	/* Check if the homepage should be enabled and set the appropriate option if thats the case.
+	/**
+	 * Check if the homepage should be enabled and set the appropriate option if thats the case.
 	 *
 	 * @since 4.3.0
 	 */
