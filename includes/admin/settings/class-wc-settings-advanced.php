@@ -413,7 +413,6 @@ class WC_Settings_Advanced extends WC_Settings_Page {
 						'desc'    => __( 'Displays analytical insights, inbox notifications, and handy shortcuts in a single screen', 'woocommerce' ),
 						'id'      => 'woocommerce_homescreen_enabled',
 						'type'    => 'checkbox',
-						'default' => 'no',
 					),
 					array(
 						'type' => 'sectionend',
